@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Louis DELAHAYE - AI & Automation Expert</title>
+<style>
+:root {
+--bleu-alain: #1B242D;
+--orange-alain: #FF9500;
+--bg-light: #fdfdfd;
+--text-gray: #4a5568;
+        }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+color: var(--bleu-alain);
+background: #f0f2f5;
+-webkit-print-color-adjust: exact;
+        }
+.page {
+width: 210mm;
+min-height: 297mm;
+padding: 15mm;
+margin: 10mm auto;
+background: white;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+position: relative;
+        }
+@media print {
+body { background: none; }
+.page { margin: 0; box-shadow: none; page-break-after: always; }
+.portfolio-page { break-before: page; }
+        }
+header {
+display: flex;
+align-items: center;
+gap: 25px;
+border-bottom: 2px solid var(--bleu-alain);
+padding-bottom: 20px;
+margin-bottom: 25px;
+        }
+.profile-img {
+width: 110px; height: 110px;
+border-radius: 50%;
+border: 2px solid var(--orange-alain);
+object-fit: cover;
+        }
+.header-text { flex: 1; }
+h1 { font-size: 30px; text-transform: uppercase; letter-spacing: 1px; }
+.tagline { color: var(--orange-alain); font-weight: 700; font-size: 18px; }
+.logo-alain { height: 40px; }
+.contact-bar {
+display: flex;
+gap: 20px;
+font-size: 13px;
+margin-top: 10px;
+flex-wrap: wrap;
+        }
+.contact-bar span {
+white-space: nowrap;
+        }
+h2 {
+font-size: 15px;
+background: var(--bleu-alain);
+color: white;
+padding: 5px 15px;
+display: inline-block;
+margin-bottom: 15px;
+border-radius: 0 15px 15px 0;
+text-transform: uppercase;
+        }
+.value-statement {
+background: #fffaf5;
+border-left: 4px solid var(--orange-alain);
+padding: 15px 20px;
+font-size: 15px;
+margin-bottom: 25px;
+line-height: 1.6;
+        }
+.experience-item { margin-bottom: 18px; }
+.exp-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; }
+.company-name { color: var(--orange-alain); }
+.exp-date { font-style: italic; color: var(--text-gray); font-weight: normal; font-size: 13px; }
+ul { margin-left: 18px; font-size: 14px; color: var(--text-gray); margin-top: 5px; }
+li { margin-bottom: 3px; }
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 12px;
+margin-bottom: 25px;
+        }
+.skill-tag {
+background: #f8fafc;
+border-left: 3px solid var(--orange-alain);
+padding: 10px;
+font-size: 13px;
+        }
+.skill-tag strong { display: block; color: var(--bleu-alain); margin-bottom: 2px; }
+/* --- PORTFOLIO --- */
+.portfolio-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 18px;
+        }
+.project-card {
+border: 1px solid #e2e8f0;
+border-radius: 10px;
+padding: 18px;
+background: var(--bg-light);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+        }
+.project-card h3 {
+font-size: 15px;
+color: var(--bleu-alain);
+border-bottom: 2px solid var(--orange-alain);
+padding-bottom: 6px;
+margin-bottom: 10px;
+        }
+.project-desc { font-size: 12.5px; color: var(--text-gray); line-height: 1.5; }
+.project-footer {
+margin-top: 12px;
+font-size: 11px;
+font-weight: 700;
+color: var(--orange-alain);
+text-transform: uppercase;
+        }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<img src="https://raw.githubusercontent.com/grunti/MyWebsite/main/assets/picture-louis7.png" class="profile-img">
+<div class="header-text">
+<h1>Louis DELAHAYE</h1>
+<div class="tagline">AI & Automation Expert for SMEs/SMBs</div>
+<div class="contact-bar">
+<span>📞 +33 6 62 67 99 86</span>
+<span>✉️ <a href="mailto:louis.delahaye@edhec.com">louis.delahaye@edhec.com</a></span>
+</div>
+</div>
+</header>
+<div class="value-statement">
+<strong>My value proposition:</strong> I automate your repetitive processes to free up your mental bandwidth. I don’t replace humans—I prepare their work (sorting, drafts, writing).
+</div>
+<section>
+<h2>💼 Experience</h2>
+<div class="experience-item">
+<div class="exp-header">
+<span>Founder <span class="company-name">@ Agence Alain</span></span>
+<span class="exp-date">Sept. 2025 - Present</span>
+</div>
+<div style="font-size: 13px; margin-top: 2px; margin-bottom: 5px;">🌐 <a href="https://agence-alain.fr">agence-alain.fr</a></div>
+<ul>
+<li>Design of <strong>n8n/Make</strong> workflows for daily SME operations.</li>
+<li>Deployment of AI agents for decision support and writing assistance.</li>
+<li>Project with a hotel to automate tour operator emails.</li>
+<li>Project with an industry company to automate emails and deploy AI RAG Agents.</li>
+<li>Project with an automotive company to deploy invoicing and delivery data processing automations, OCR AI use cases, and AI RAG Agents.</li>
+</ul>
+</div>
+<div class="experience-item">
+<div class="exp-header">
+<span>AI and Data Consultant</span>
+<span class="exp-date">Nov. 2024 - Present</span>
+</div>
+<ul>
+<li>AI audits and diagnostics to identify productivity gains.</li>
+<li>Development of industry-specific monitoring tools and custom RAG agents.</li>
+<li>Provided formation and sensibilisation for the team workers.</li>
+</ul>
+</div>
+<div class="experience-item">
+<div class="exp-header">
+<span>AI Project Manager <span class="company-name">@ Crédit Agricole</span></span>
+<span class="exp-date">May 2024 - Nov. 2024</span>
+</div>
+<ul>
+<li>Oversight of the implementation of the group AI strategy within the DataLab.</li>
+</ul>
+</div>
+</section>
+<section>
+<h2>🛠️ Technical Expertise</h2>
+<div class="skills-grid">
+<div class="skill-tag"><strong>Automation</strong> n8n (expert), Make, Zapier, Airtable</div>
+<div class="skill-tag"><strong>Artificial Intelligence</strong> AI Agents, RAG, Prompt Engineering</div>
+<div class="skill-tag"><strong>Business Tools</strong> Notion, Google/Microsoft Suite, Slack, CRM</div>
+<div class="skill-tag"><strong>Languages</strong> English (C1 - IELTS 7.5), German (B2)</div>
+</div>
+</section>
+<section>
+<h2>🎓 Education & Involvement</h2>
+<div class="experience-item" style="margin-bottom: 10px;">
+<div class="exp-header">
+<span>EDHEC Business School - Grande École Program</span>
+<span class="exp-date">2022 - 2026</span>
+</div>
+<ul style="margin-top: 2px;">
+<li>Participation in the <strong>Startup Challenge</strong> (Innovation & Entrepreneurship).</li>
+<li>IT Systems Manager @ <strong>ETNA</strong> (Video/Tech Student Association).</li>
+</ul>
+</div>
+<div style="font-size: 13px; color: var(--text-gray); margin-top: 10px;">
+<strong>Extras:</strong> Black Belt 1st Dan Judoka • Self-taught Pianist • English Tutor.
+</div>
+</section>
+</div>
+<div class="page portfolio-page">
+<header style="border-bottom: 2px solid var(--orange-alain);">
+<div class="header-text">
+<h1 style="color: var(--orange-alain);">Project Portfolio</h1>
+<div class="tagline" style="color: var(--bleu-alain);">Concrete time-saving solutions</div>
+</div>
+</header>
+<section>
+<div class="portfolio-grid">
+<div class="project-card">
+<h3>🔍 Intelligent Prospecting</h3>
+<p class="project-desc">Targeted lead extraction and automatic generation of <strong>personalized outreach messages</strong> based on the prospect’s profile.</p>
+<div class="project-footer">Approach: Quality over Quantity</div>
+</div>
+<div class="project-card">
+<h3>🏠 Real Estate & Sourcing</h3>
+<p class="project-desc">Automated scraping of real estate leads and instant drafting of <strong>initial contact proposals</strong> for faster response times.</p>
+<div class="project-footer">Focus: Speed of acquisition</div>
+</div>
+<div class="project-card">
+<h3>📊 Financial Management</h3>
+<p class="project-desc">Automatic categorization of incoming invoices and <strong>generation of specific invoices</strong> for dispute resolution.</p>
+<div class="project-footer">Benefit: Accounting reliability</div>
+</div>
+<div class="project-card">
+<h3>✉️ AI Concierge / Email</h3>
+<p class="project-desc">Analysis of incoming flows and automatic drafting of <strong>response drafts</strong>. The user only needs to validate or adjust.</p>
+<div class="project-footer">Impact: Less time spent on emails</div>
+</div>
+<div class="project-card">
+<h3>📈 AI & Economic Monitoring</h3>
+<p class="project-desc">Automated personal newsletter: aggregation of AI trends and global economic signals with AI-powered synthesis.</p>
+<div class="project-footer">Daily strategic monitoring</div>
+</div>
+<div class="project-card">
+<h3>⚖️ Regulatory Monitoring</h3>
+<p class="project-desc">Automated tracking of environmental standards and legal changes to ensure compliance without manual research.</p>
+<div class="project-footer">Sector: Standards & Environment</div>
+</div>
+</div>
+</section>
+<section style="margin-top: 40px;">
+<h2>🎥 Outreach & Knowledge Sharing</h2>
+<div class="experience-item">
+<div class="exp-header"><span>YouTube: "Cash Routine"</span></div>
+<p class="project-desc" style="font-size: 13px;">Channel dedicated to practical explanations of n8n and AI for optimizing personal and professional productivity.</p>
+</div>
+<div class="experience-item">
+<div class="exp-header"><span>LinkedIn: <a href="https://www.linkedin.com/company/alain-agence/" target="_blank" style="color: inherit;">Agence Alain</a></span></div>
+<p class="project-desc" style="font-size: 13px;">Posting educative and informative content about AI for business on the Agence Alain page.</p>
+</div>
+</section>
+<footer style="position: absolute; bottom: 15mm; width: 85%; text-align: center; font-size: 11px; color: #aaa; border-top: 1px solid #eee; padding-top: 10px;">
+            Louis Delahaye • Agence Alain • 2025
+</footer>
+</div>
+</body>
+</html>

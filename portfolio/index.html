@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis DELAHAYE - Expert IA & Automatisations</title>
+    <style>
+        :root {
+            --bleu-alain: #1B242D;
+            --orange-alain: #FF9500;
+            --bg-light: #fdfdfd;
+            --text-gray: #4a5568;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--bleu-alain);
+            background: #f0f2f5;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; page-break-after: always; }
+            .portfolio-page { break-before: page; }
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border-bottom: 2px solid var(--bleu-alain);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .profile-img {
+            width: 110px; height: 110px;
+            border-radius: 50%;
+            border: 2px solid var(--orange-alain);
+            object-fit: cover;
+        }
+        .header-text { flex: 1; }
+        h1 { font-size: 30px; text-transform: uppercase; letter-spacing: 1px; }
+        .tagline { color: var(--orange-alain); font-weight: 700; font-size: 18px; }
+        .logo-alain { height: 40px; }
+
+        .contact-bar {
+            display: flex;
+            gap: 20px;
+            font-size: 13px;
+            margin-top: 10px;
+            flex-wrap: wrap; /* Ajouté pour gérer les petits écrans */
+        }
+        .contact-bar span {
+            white-space: nowrap; /* Empêche les retours à la ligne */
+        }
+
+        h2 {
+            font-size: 15px;
+            background: var(--bleu-alain);
+            color: white;
+            padding: 5px 15px;
+            display: inline-block;
+            margin-bottom: 15px;
+            border-radius: 0 15px 15px 0;
+            text-transform: uppercase;
+        }
+
+        .value-statement {
+            background: #fffaf5;
+            border-left: 4px solid var(--orange-alain);
+            padding: 15px 20px;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .experience-item { margin-bottom: 18px; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; }
+        .company-name { color: var(--orange-alain); }
+        .exp-date { font-style: italic; color: var(--text-gray); font-weight: normal; font-size: 13px; }
+        ul { margin-left: 18px; font-size: 14px; color: var(--text-gray); margin-top: 5px; }
+        li { margin-bottom: 3px; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .skill-tag {
+            background: #f8fafc;
+            border-left: 3px solid var(--orange-alain);
+            padding: 10px;
+            font-size: 13px;
+        }
+        .skill-tag strong { display: block; color: var(--bleu-alain); margin-bottom: 2px; }
+
+        /* --- PORTFOLIO --- */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+        .project-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 18px;
+            background: var(--bg-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-card h3 {
+            font-size: 15px;
+            color: var(--bleu-alain);
+            border-bottom: 2px solid var(--orange-alain);
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+        .project-desc { font-size: 12.5px; color: var(--text-gray); line-height: 1.5; }
+        .project-footer {
+            margin-top: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--orange-alain);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <img src="https://raw.githubusercontent.com/grunti/MyWebsite/main/assets/picture-louis7.png" class="profile-img">
+            <div class="header-text">
+                <h1>Louis DELAHAYE</h1>
+                <div class="tagline">Expert Automatisations & IA pour PME/TPE</div>
+                <div class="contact-bar">
+                    <span>📞 06 62 67 99 86</span>
+                    <span>✉️ <a href="mailto:louis.delahaye@edhec.com">louis.delahaye@edhec.com</a></span>
+                    <span>🌐 <a href="https://agence-alain.fr">agence-alain.fr</a></span>
+                </div>
+            </div>
+            <img src="https://raw.githubusercontent.com/grunti/MyWebsite/main/assets/alain-sans-fond.png" class="logo-alain">
+        </header>
+
+        <div class="value-statement">
+            <strong>Ma proposition :</strong> J'automatise vos processus répétitifs pour vous libérer du temps cerveau. Je ne remplace pas l'humain, je prépare son travail (tri, brouillons, rédaction).
+        </div>
+
+        <section>
+            <h2>💼 Expériences</h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Fondateur <span class="company-name">@ Agence Alain</span></span>
+                    <span class="exp-date">Sept. 2025 - Présent</span>
+                </div>
+                <ul>
+                    <li>Conception de workflows <strong>n8n/Make</strong> pour le quotidien des PME.</li>
+                    <li>Déploiement d'agents IA d'aide à la décision et à la rédaction.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Consultant IA & Automatisations</span>
+                    <span class="exp-date">Nov. 2024 - Présent</span>
+                </div>
+                <ul>
+                    <li>Audits et diagnostics IA pour identifier les gains de productivité.</li>
+                    <li>Développement d'outils de veille métier et d'agents RAG personnalisés.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Chef de Projet IA <span class="company-name">@ Crédit Agricole</span></span>
+                    <span class="exp-date">Mai 2024 - Nov. 2024</span>
+                </div>
+                <ul>
+                    <li>Suivi de l'implémentation de la stratégie IA au sein du DataLab Groupe.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🛠️ Expertise Technique</h2>
+            <div class="skills-grid">
+                <div class="skill-tag"><strong>Automatisations</strong> n8n (expert), Make, Zapier, Airtable</div>
+                <div class="skill-tag"><strong>Intelligence Artificielle</strong> Agents IA, RAG, Prompt Engineering</div>
+                <div class="skill-tag"><strong>Outils Métiers</strong> Notion, Suite Google/Office, Slack, CRM</div>
+                <div class="skill-tag"><strong>Langues</strong> Anglais (C1 - IELTS 7.5), Allemand (B2)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🎓 Formation & Engagement</h2>
+            <div class="experience-item" style="margin-bottom: 10px;">
+                <div class="exp-header">
+                    <span>EDHEC Business School - Programme Grande École</span>
+                    <span class="exp-date">2022 - 2026</span>
+                </div>
+                <ul style="margin-top: 2px;">
+                    <li>Participation au <strong>Startup Challenge</strong> (Innovation & Entrepreneurship).</li>
+                    <li>Responsable Systèmes Informatiques @ <strong>ETNA</strong> (Asso Vidéo/Tech).</li>
+                </ul>
+            </div>
+            <div style="font-size: 13px; color: var(--text-gray); margin-top: 10px;">
+                <strong>Extra :</strong> Judoka Ceinture Noire 1er Dan • Piano (autodidacte) • Tuteur anglais.
+            </div>
+        </section>
+    </div>
+
+    <div class="page portfolio-page">
+        <header style="border-bottom: 2px solid var(--orange-alain);">
+            <div class="header-text">
+                <h1 style="color: var(--orange-alain);">Portfolio Projets</h1>
+                <div class="tagline" style="color: var(--bleu-alain);">Solutions concrètes de gain de temps</div>
+            </div>
+            <img src="https://raw.githubusercontent.com/grunti/MyWebsite/main/assets/alain-sans-fond.png" class="logo-alain">
+        </header>
+
+        <section>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <h3>🔍 Prospection Intelligente</h3>
+                    <p class="project-desc">Extraction ciblée de leads et génération automatique de <strong>propositions de messages personnalisés</strong> basés sur le profil de la cible.</p>
+                    <div class="project-footer">Approche : Qualité vs Quantité</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🏠 Immobilier & Sourcing</h3>
+                    <p class="project-desc">Scraping automatisé de leads immobiliers et rédaction immédiate d'une <strong>proposition de premier contact</strong> pour gagner en réactivité.</p>
+                    <div class="project-footer">Focus : Rapidité d'acquisition</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>📊 Gestion Financière</h3>
+                    <p class="project-desc">Tri automatique des factures reçues par catégorie et <strong>génération de factures spécifiques</strong> pour la résolution de litiges.</p>
+                    <div class="project-footer">Gain : Fiabilité comptable</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>✉️ Conciergerie IA / Mail</h3>
+                    <p class="project-desc">Analyse des flux entrants et rédaction automatique de <strong>brouillons de réponse</strong>. L'utilisateur n'a plus qu'à valider ou ajuster.</p>
+                    <div class="project-footer">Impact : moins de temps sur les mails</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>📈 Veille IA & Économique</h3>
+                    <p class="project-desc">Newsletter personnelle automatisée : agrégation des tendances IA et signaux économiques mondiaux avec synthèse par agent IA.</p>
+                    <div class="project-footer">Veille stratégique quotidienne</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>⚖️ Veille Réglementaire</h3>
+                    <p class="project-desc">Surveillance automatisée des normes environnementales et évolutions légales pour assurer la conformité sans recherche manuelle.</p>
+                    <div class="project-footer">Secteur : Normes & Environnement</div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 40px;">
+            <h2>🎥 Rayonnement & Partage</h2>
+            <div class="experience-item">
+                <div class="exp-header"><span>YouTube : "Cash Routine"</span></div>
+                <p class="project-desc" style="font-size: 13px;">Chaîne de vulgarisation sur l'usage concret de n8n et de l'IA pour optimiser sa productivité personnelle et professionnelle.</p>
+            </div>
+        </section>
+
+        <footer style="position: absolute; bottom: 15mm; width: 85%; text-align: center; font-size: 11px; color: #aaa; border-top: 1px solid #eee; padding-top: 10px;">
+            Louis Delahaye • Agence Alain • 2025
+        </footer>
+    </div>
+
+</body>
+</html>
